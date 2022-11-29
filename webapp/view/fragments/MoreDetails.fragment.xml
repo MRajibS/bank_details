@@ -1,0 +1,33 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+    <Dialog id="moreBankDetails" title="Confidential Details">
+        <!-- Vertical And Horizontal Alignment -->
+        <VBox id="vBox1" class="sapUiSmallMargin">
+            <Title text="Account Details" id="accDetails" level="H1"></Title>
+            <HBox id="hBox1">
+                <Label text="Bank Account Number:" id ="bankAccNo" class="sapUiSmallMarginEnd"/>
+                <Text text="3888473*******" id="bankAccVal" class="sapUiSmallMarginBegin"/>
+            </HBox>
+            <HBox id="hBox2">
+                <Label text="Account Holder Name:" id ="accHolderId" class="sapUiSmallMarginEnd"/>
+                <Text text="Rajib S" id="accHolderVal" class="sapUiSmallMarginBegin"/>
+            </HBox>
+            <HBox id="hBox3">
+                <Label text="IFSC Code:" id ="accIFSC" class="sapUiSmallMarginEnd"/>
+                <Text text="00000*******" id="accIFSCVal" class="sapUiSmallMarginBegin"/>
+            </HBox>
+            <HBox id="hBox4">
+                <Label text="Customer Id:" id ="custId" class="sapUiSmallMarginEnd"/>
+                <Text text="12345" id="custIdVal" class="sapUiSmallMarginBegin"/>
+            </HBox>
+            <HBox id="hBox5">
+                <Label text="Customer Address:" id ="custAddr" class="sapUiSmallMarginEnd"/>
+                <Text text="Bhakuri(Dakshin), Balarampur, Berhampore, 733165" id="custAddrVal" class="sapUiSmallMarginBegin"/>
+            </HBox>
+        </VBox>
+        <beginButton>
+        <Button id="closeBtn" text="Close" press=".onCloseMoreDetails"></Button>
+        </beginButton>
+    </Dialog>
+
+</core:FragmentDefinition>

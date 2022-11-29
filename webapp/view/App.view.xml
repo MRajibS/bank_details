@@ -1,7 +1,22 @@
 <mvc:View controllerName="com.sap.bankdetails.controller.App"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-        <content />
-    </Page>
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <App id="app">
+        <Page id="page" title="Account">
+            <headerContent>
+                <Button id="demonBtn" type="Emphasized" text="Refresh"/>
+            </headerContent>
+            <content>
+                <!-- Begin of Fragment Coding -->
+                <core:Fragment id="bankDetailsfragment" fragmentName="com.sap.bankdetails.view.fragments.BankDetails" type="XML" />
+                <!-- <core:Fragment id="moreBankDetails" fragmentName="com.sap.bankdetails.view.fragments.MoreBankDetails" type="XML" /> -->
+                <!-- End of Fragment Coding -->
+                <Button id="openBankDetails" type="Neutral" text="Find more details..." 
+                class="sapUiSmallMargin" 
+                press=".onOpenBankDetails"></Button>
+
+            </content>
+        </Page>
+    </App>
 </mvc:View>
